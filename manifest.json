@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "URL to Google Sheets",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "identity"
+  ],
+  "oauth2": {
+    "client_id": "Client Id",
+    "scopes": [
+      "https://www.googleapis.com/auth/spreadsheets"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
